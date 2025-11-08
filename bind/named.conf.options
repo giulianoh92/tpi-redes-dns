@@ -1,0 +1,18 @@
+options {
+    directory "/var/cache/bind";
+
+    // Forwarders públicos
+    forwarders {
+        8.8.8.8;
+        1.1.1.1;
+    };
+
+    // Recursión únicamente para la red interna (10.1.0.0/16)
+    allow-query { 10.1.0.0/16; localhost; };
+    recursion yes;
+
+    dnssec-validation auto;
+
+    listen-on { any; };
+    listen-on-v6 { none; };
+};

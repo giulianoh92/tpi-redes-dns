@@ -1,0 +1,17 @@
+$TTL 1D
+@   IN  SOA dns.misiotic.com. admin.misiotic.com. (
+        2025110701
+        3600
+        900
+        604800
+        86400 )
+
+@       IN  NS  dns.misiotic.com.
+
+; ----- PTRs -----
+1       IN  PTR fw.misiotic.com.
+2       IN  PTR www.misiotic.com.
+3       IN  PTR proxy.misiotic.com.
+4       IN  PTR mail.misiotic.com.
+5       IN  PTR file.misiotic.com.
+6       IN  PTR dns.misiotic.com.

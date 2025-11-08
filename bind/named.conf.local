@@ -1,0 +1,11 @@
+// Zona directa misiotic.com
+zone "misiotic.com" {
+    type master;
+    file "/etc/bind/db.misiotic.com";
+};
+
+// Zona inversa para 10.1.80.0/27
+zone "80.1.10.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.10.1.80";
+};
